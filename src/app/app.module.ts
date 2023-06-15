@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { ServerEditComponent } from './server-edit/server-edit.component';
+import { HeaderComponent } from './header/header.component';
 
 
 
@@ -14,7 +15,8 @@ import { ServerEditComponent } from './server-edit/server-edit.component';
     AppComponent,
     ServerComponent,
     ServersComponent,
-    ServerEditComponent
+    ServerEditComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

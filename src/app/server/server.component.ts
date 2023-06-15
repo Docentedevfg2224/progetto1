@@ -1,4 +1,4 @@
-import { Component, Input } from "@angular/core";
+import { Component, Input, OnInit } from "@angular/core";
 
 @Component({
     selector: 'app-server',
@@ -6,7 +6,7 @@ import { Component, Input } from "@angular/core";
     styleUrls: ['./server.component.css']
 })
 
-export class ServerComponent{
+export class ServerComponent implements OnInit{
     
     serverId: number = 10;
     // serverStatus: string = 'offline';
@@ -14,8 +14,13 @@ export class ServerComponent{
     @Input('name') serverName = '';
     
     constructor(){
+        
+    }
+
+    ngOnInit() {
         this.serverStatus = this.setServerStatus();
     }
+
 
     getServerStatus(){
         return this.serverStatus;    

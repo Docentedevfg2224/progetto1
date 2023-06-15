@@ -1,1 +1,6 @@
 <h3 [ngStyle]="{backgroundColor: getColor()}" [ngClass]="{online: serverStatus === 'online', offline: serverStatus === 'offline'}">{{serverName}} con ID {{serverId}} è {{getServerStatus()}}</h3>
+
+<br>
+<br>
+
+<app-server-edit (newServerEvent)="onServerEvent($event)"></app-server-edit>
